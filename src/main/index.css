@@ -1,0 +1,72 @@
+{
+   box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    border-top: 8px solid #C4A46A;  /*枠的なもの*/
+    background-color: #50604b;
+    color: #ffffff;
+    font-family: "Yu Gothic", "Hiragino Kaku Gothic ProN", sans-serif;
+    line-height: 1.9;
+    overflow-wrap: anywhere;
+}
+
+/*右に余白を残こす */
+.page {
+    width: min(100% - 40px, 780px);
+    margin: 0 auto;
+}
+header {
+    padding: 64px 0 40px;
+    border-bottom: 1px solid #cbd2c5;
+}
+.label {
+    margin: 0 0 20px;
+    color: #52624f;
+    font-size: 0.85rem;
+    letter-spacing: 0.12em;
+}
+h1 {
+    margin: 0;
+    font-family: "Yu Mincho", "Hiragino Mincho ProN", serif;
+    font-size: clamp(2rem, 7vw, 3.5rem);
+    font-weight: 600;
+    line-height: 1.45;
+    letter-spacing: 0.06em;
+}
+.subtitle {
+    margin: 20px 0 0;
+    color: #616a5e;
+}
+.intro {
+    padding: 36px 0;
+}
+h2 {
+    margin: 0 0 16px;
+    font-size: 1.15rem;
+}
+p {
+    margin: 0 0 20px;
+}
+
+/*ノートURL*/
+.note-link {
+    color: #FCE7ED;
+    text-decoration: none;
+}
+
+.note-link:hover {
+    color: #A58BC4;
+}
+
+/* スマホの版やで*/
+@media (max-width: 480px) {
+    header {
+        padding-top: 40px;
+    }
+
+    .plans {
+        padding: 20px;
+    }
+}
